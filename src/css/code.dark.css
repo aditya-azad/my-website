@@ -5,11 +5,12 @@
  */
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #abb2bf;
-  background: none;
+  display: block;
+  color: var(--grey);
   font-family: var(--codefont);
   text-align: left;
-  white-space: pre;
+  white-space: pre-wrap;
+  overflow-x: auto;
   word-break: break-all;
   line-height: 1.5;
   -moz-tab-size: 4;

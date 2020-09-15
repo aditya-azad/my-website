@@ -142,4 +142,3 @@ It is increasingly important to protect ourselves from such phishing attacks the
 - Same goes for emails. They seem to be coming from legit source but often they are not.
 - Check for spelling mistakes. Most of these scams have poor grammar usage and some spelling mistakes.
 - Only submit personal information if your connection is using HTTPS. See the URL of the website, if it starts with `http://` instead of `https://`, chances are that there is something shady going on.
-
