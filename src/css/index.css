@@ -221,6 +221,20 @@ h6 {
 .card-title {
   font-size: 1.6em;
 }
+.svg-icons {
+  display: flex;
+  margin-right: 10px;
+}
+.svg-icon {
+  margin-right: 10px;
+  filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(229deg) brightness(101%)
+    contrast(86%);
+  width: 20px;
+  height: auto;
+}
+.small-margin {
+  margin-bottom: 20px;
+}
 
 /* tags */
 .card-tags {
@@ -230,6 +244,12 @@ h6 {
   align-items: baseline;
   align-content: flex-start;
   justify-content: flex-end;
+}
+.left {
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 .card-tag {
   text-transform: uppercase;

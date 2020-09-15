@@ -1,0 +1,26 @@
+---
+layout: layouts/home.njk
+permalink: /blog/
+eleventyNavigation:
+  key: Blog
+  order: 2
+---
+
+<h1 class="main-page-heading small-margin">Blog</h1>
+
+<div class="section small-margin">
+  <h1 class="section-heading">All Tags</h1>
+  <div class="card-tags left">
+    {% for tag in collections.tagList %}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="card-tag">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="section">
+  <h1 class="section-heading">Posts</h1>
+  {% set displayTags = true %}
+  {% set postslist = collections.blog %}
+  {% include "postslist.njk" %}
+</div>
