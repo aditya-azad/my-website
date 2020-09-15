@@ -2,7 +2,7 @@
 title: "Mastering Vim Part 2: Vimrc and Plugins"
 date: 2019-09-14
 tags:
-  - vim 
+  - vim
 layout: layouts/post.njk
 ---
 
@@ -85,7 +85,7 @@ Here is the breakdown of the plugins I use:
 - [Nerdtree](https://github.com/scrooloose/nerdtree) - It is a file explorer similar to what you have in other IDEs
 - [Gruvbox](https://github.com/morhetz/gruvbox) - It is the awesome theme that makes Vim look pretty
 
-To run Nerdtree you have to run `:NERDTreeToggle` every time. To make it easier to access it I have bounded my `Ctrl-o` to this command. Similarly I have bounded `:FZF` to `;` key. To know how to bind keys in vim check out this [awesome medium post](https://medium.com/vim-drops/understand-vim-mappings-and-create-your-own-shortcuts-f52ee4a6b8ed).
+To run Nerdtree you have to run `:NERDTreeToggle` every time. To make it easier to access it I have bounded my `Ctrl-o` to this command. Similarly I have bounded `:FZF` to `;` key.
 
 If you just want the same binding I have, copy [my .vimrc](https://github.com/aditya-azad/configs) file.
 

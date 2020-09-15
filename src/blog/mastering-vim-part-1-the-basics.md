@@ -2,7 +2,7 @@
 title: "Mastering Vim Part 1: The Basics"
 date: 2019-09-10
 tags:
-  - vim 
+  - vim
 layout: layouts/post.njk
 ---
 
@@ -60,15 +60,7 @@ To go into visual mode you click `v`, `V` or `Ctrl+v` depending on what you want
 
 ### Navigation
 
-Okay, now let's get into it. **All of the key binding from now on have to be written in normal mode** unless stated otherwise. To move around in the text you need to use `h`, `j`, `k`, `l`. These are your arrow keys from now on. `h` is used to go left, `j` for down, `k` for up, `l` for right like so:
-
-```text
-        ^
-        k
-<h             l>
-        j
-        v
-```
+Okay, now let's get into it. **All of the key binding from now on have to be written in normal mode** unless stated otherwise. To move around in the text you need to use `h`, `j`, `k`, `l`. These are your arrow keys from now on. `h` is used to go left, `j` for down, `k` for up, `l` for right.
 
 **It is going to be hard at first. But, the payoff is going to be huge**. You are going to mess up a lot. Don't worry, you will get there. Enter a bunch of text using insert mode and try this.
 
