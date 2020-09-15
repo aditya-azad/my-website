@@ -4,9 +4,8 @@
   "description": "My personal website slash blog",
   "scripts": {
     "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
     "start": "eleventy --serve",
+    "watch": "eleventy --watch",
     "debug": "DEBUG=* eleventy",
     "debug-win": "set DEBUG=* & eleventy"
   },

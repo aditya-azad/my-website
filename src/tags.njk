@@ -17,6 +17,7 @@ permalink: /tags/{{ tag }}/
 ---
 <h1>Tagged “{{ tag }}”</h1>
 
+{% set displayTags = true %}
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
