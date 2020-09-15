@@ -7,10 +7,7 @@ templateClass: tmpl-post
 
 {{ content | safe }}
 
-<hr class="hr">
-<ul>
-  {%- set nextPost = collections.blog | getNextCollectionItem(page) %}
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-  {%- set previousPost = collections.blog | getPreviousCollectionItem(page) %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
+{%- set nextPost = collections.blog | getNextCollectionItem(page) %}
+{%- if nextPost %}<p class="post-nav">Next Post:</p> <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>{% endif %}<br>
+{%- set previousPost = collections.blog | getPreviousCollectionItem(page) %}
+{%- if previousPost %}<p class="post-nav">Previous Post:</p> <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>{% endif %}

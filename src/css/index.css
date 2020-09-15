@@ -95,11 +95,6 @@ body {
   background-color: var(--lightgrey);
 }
 
-/* hide scrollbar */
-html::-webkit-scrollbar {
-  display: none;
-}
-
 footer {
   display: flex;
   margin: 0 auto;
@@ -279,6 +274,12 @@ h6 {
 }
 .tmpl-post ul {
   margin: 20px 20px;
+}
+
+.post-nav {
+  display: inline-block;
+  margin: 0;
+  color: var(--orange);
 }
 
 /* tags */
