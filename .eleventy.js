@@ -65,6 +65,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -100,12 +101,14 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk",
       "html",
-      "liquid"
+      "liquid",
+      "txt"
     ],
 
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
+    passthroughFileCopy: true,
 
     dir: {
       input: "src",

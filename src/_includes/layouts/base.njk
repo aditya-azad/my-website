@@ -15,17 +15,21 @@
     <header>
       <div class="nav-bar">
         <div class="nav-content">
-          <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+          <div class="nav-left">
+            <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+          </div>
           <div class="nav-right">
             <div class="svg-icons">
-              <a href="https://www.instagram.com/_aditya_azad_/"><img class="svg-icon" src="/img/instagram.svg" /></a>
-              <a href="https://www.linkedin.com/in/aditya-azad"><img class="svg-icon" src="/img/linkedin.svg" /></a>
-              <a href="https://www.github.com/aditya-azad"><img class="svg-icon" src="/img/github.svg" /></a>
-              <a href="mailto:adityaazad121@gmail.com"><img class="svg-icon" src="/img/envelope.svg" /></a>
+              <a href="mailto:adityaazad121@gmail.com"><img alt="mail" class="svg-icon" src="/img/envelope.svg" /></a>
+              <a href="https://www.instagram.com/_aditya_azad_/"><img class="svg-icon" alt="instagram"  src="/img/instagram.svg" /></a>
+              <a href="https://www.linkedin.com/in/aditya-azad"><img class="svg-icon" alt="linkedin" src="/img/linkedin.svg" /></a>
+              <a href="https://www.github.com/aditya-azad"><img class="svg-icon" alt="github" src="/img/github.svg" /></a>
             </div>
-            {%- for entry in collections.all | eleventyNavigation %}
-              <p class="nav-item"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-            {%- endfor %}
+            <div class="nav-page-buttons">
+              {%- for entry in collections.all | eleventyNavigation %}
+                <p class="nav-item"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+              {%- endfor %}
+            </div>
           </div>
         </div>
       </div>
