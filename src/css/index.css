@@ -9,9 +9,9 @@
   --lightblue: #14b4cc;
 
   /* fonts */
-  --titlefont: "Roboto", "serif";
+  --titlefont: "Roboto", "sans-serif";
   --textfont: "Open Sans", "sans-serif";
-  --codefont: "Inconsolata", "Consolas", "monospace";
+  --codefont: "Inconsolata", "monospace";
 
   /* font sizes */
   --bigheadingsize: 3.2em;
