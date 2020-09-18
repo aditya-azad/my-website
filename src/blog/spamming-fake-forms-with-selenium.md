@@ -7,7 +7,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-There must be at least one time that you got a spam email asking you to verify some online account that you have. The link in the email redirects you to a seemingly legit site that asks you your account details. These type of schemes are knows as **phishing** attacks. It is a common technique used by hackers and scammers to extract bank details and sensitive information. Sadly, countless people fall for this daily.
+There must be at least one time that you got a spam email asking you to verify some online account that you have. The link in the email redirects you to a seemingly legit site that asks you your account details. These type of schemes are knows as **phishing** attacks. It is a common technique used by hackers and scammers to extract bank details and sensitive information.
 
 Recently I got a similar email asking me to verify my email account and I thought that I should do something about it. So, I made a python script that would spam the form with fake email accounts and passwords. This way it would be hard for them to separate the fake credentials from the real ones.
 
@@ -17,7 +17,7 @@ For this I used a library called [Selenium](https://www.selenium.dev/). It is us
 
 Most websites don't have the functionality to differentiate a machine from an actual person so this will come in handy. I know that there are much easier ways to do this other than using Selenium, but I wanted to try out Selenium for a change.
 
-For Selenium to work you need a web driver depending on your browser. For chrome, the driver can be found [here](https://chromedriver.chromium.org/downloads). You can google search for other drivers.
+For Selenium to work you need a web driver depending on your browser. For chrome, the driver can be found [here](https://chromedriver.chromium.org/downloads). You can search for other drivers online.
 
 Then all you have to do is
 
@@ -135,7 +135,7 @@ To do this repeatedly you just put all this in a while loop. To refresh the page
 
 ## How to spot phishing sites and e-mails
 
-It is increasingly important to protect ourselves from such phishing attacks these days. There are a lot of people who don't know much about this and get scammed easily. Below are a few ways to spot such scams:
+It is becoming increasingly important to protect ourselves from such phishing attacks day by day. There are a lot of people who don't know much about this and get scammed easily. Below are a few ways to spot such scams:
 
 - Always click links in emails from trusted sources.
 - Double check the URL before entering your credentials. Usually scammers redirect you to a legit looking web page and sometimes there is no visual difference at all. The only way to be sure is to look at the URL. Usually it is similar to the original website address but a little different. For example, `www.facebool.com` and `www.goo8le.com`.

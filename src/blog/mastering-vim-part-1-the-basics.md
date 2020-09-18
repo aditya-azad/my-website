@@ -24,7 +24,7 @@ On Debian based systems
 sudo apt install vim
 ```
 
-If you use other package manager like Pacman or something, then you know how to install it. You can also download it from the [official website](https://www.vim.org/download.php).
+Other package managers like `pacman` have similar command.
 
 ### Mac
 
@@ -40,7 +40,7 @@ For windows you have to install the GUI version of vim (gVim) if you want least 
 
 ## The Basics
 
-Alright, now that you have installed vim, let's jump right into it. First, open vim by typing `vim` in the terminal if you are on Mac or Linux. On Windows, double click the gVim application to launch it.
+Alright, now that you have installed vim, let's jump right into it. First, open vim by typing `vim` in the terminal if you are on Mac or Linux. On Windows, you will have `gVim` application.
 
 You will see an ugly looking black screen. Don't worry about it, we are going to make it look way better in the next tutorial. For now, bear with me.
 
@@ -52,15 +52,15 @@ How do you move around when you can't use mouse at all? Well the answer is using
 - `INSERT` - To insert text into the file.
 - `VISUAL` - To select the text and execute commands on that selected text.
 
-Normal mode is the mode in which you are going to spend most of your time in. Moving around and debugging code is really fast in this mode. To enter normal mode you press `ESC` key. You will notice that you cannot enter text in this mode if you try to. **To switch to other modes you have to be in normal mode first**. Always.
+Normal mode is the mode in which you are going to spend most of your time in. Moving around and debugging code is really fast in this mode. To enter normal mode you press `ESC` key. You will notice that you cannot enter text in this mode if you try to.
 
-To go into insert mode you click `i` (it is case sensitive). The last line on your terminal will say `-- INSERT --`. Now you can enter as much text as you want and click `ESC` when you are done with inserting. Always use normal mode to move around in text. **Please don't use arrow keys** or there is no point in using vim.
+To go into insert mode you click `i` (case sensitive). The last line on your terminal will say `-- INSERT --`. Now you can enter as much text as you want and click `ESC` when you are done with inserting. Always use normal mode to move around in text. **Please don't use arrow keys** or there is no point in using vim.
 
 To go into visual mode you click `v`, `V` or `Ctrl+v` depending on what you want to do. For, now don't worry about it. Just know that it is used to select text. I will get into visual mode separately. When you press either of those key bindings, the last line on your terminal will say `-- VISUAL --`. Most of the key bindings for visual mode is same as normal mode.
 
 ### Navigation
 
-Okay, now let's get into it. **All of the key binding from now on have to be written in normal mode** unless stated otherwise. To move around in the text you need to use `h`, `j`, `k`, `l`. These are your arrow keys from now on. `h` is used to go left, `j` for down, `k` for up, `l` for right.
+To move around in the text you need to use `h`, `j`, `k`, `l`. These are your arrow keys from now on. `h` is used to go left, `j` for down, `k` for up, `l` for right. This obviously cannot be done in insert mode.
 
 **It is going to be hard at first. But, the payoff is going to be huge**. You are going to mess up a lot. Don't worry, you will get there. Enter a bunch of text using insert mode and try this.
 
@@ -76,7 +76,7 @@ Now some other key bindings for moving around:
 
 End of the word is marked by a space. End of the line is marked by new line character. Now try these and get a hang of it. The first three of this list are used most to quickly move around once you are on the correct line.
 
-This is all you are going to need to be efficient at moving around the code. If you are too lazy you can try this [interactive vim](https://www.openvim.com) tutorial or an [adventure game](https://vim-adventures.com) to learn these key bindings.
+This is all you are going to need to be efficient at moving around the code. If you are too lazy you can try this [interactive vim](https://www.openvim.com) tutorial or an [adventure game](https://vim-adventures.com) to learn these key bindings in a more fun way.
 
 ### Editing
 
@@ -98,9 +98,7 @@ The difference between `cw` and `dw` is that `cw` puts you into insert mode, whi
 
 ### Repetition
 
-Let me show you something cool. You can use numbers to extend the functionality of these commands. For example, typing `5` before `w` will move you 5 words ahead. Similarly, `10j` will move the cursor 10 lines down. For keys with two keystrokes like `dd` and `yy` you use this feature differently. You have to use these commands like `d4d` and `y4y`.
-
-Of course, keys like `A` and `0` do not support this feature because of obvious reasons, but most of the keys that you use will support this feature.
+Let me show you something cool. You can use numbers to extend the functionality of these commands. For example, typing `5` before `w` will move you 5 words ahead. Similarly, `10j` will move the cursor 10 lines down. For keys with two keystrokes like `dd` and `yy` you use this feature differently. You have to use these commands like `d4d` and `y4y`. Most key bindings will support this feature.
 
 Congratulations, now you know about 70% of what you are going to use all the time.
 
@@ -108,8 +106,8 @@ Congratulations, now you know about 70% of what you are going to use all the tim
 
 Alright, for searching text there are two methods `f` and `/`:
 
-- You use `f` to search next occurrence of a character. For example, if you type `ft` the cursor will move to the next occurrence of "t" in the text. To search this way but backwards, you type `F` instead of `f`.
-- For searching a sub-string all over the text you use `/` followed by the text you want to search and then pressing enter. For example, to search for "hello world" in the text, you type `/hello world` and press enter. To find the **n**ext occurrence you type `n`, for previous, you type `N` after pressing enter. This is more like the search feature in your common text editors and IDEs.
+- You use `f` to search next occurrence of a character. For example, if you type `ft` the cursor will move to the next occurrence of "t" in current line. To search this way but backwards, you type `F` instead of `f`.
+- For searching a sub-string all over the text you use `/` followed by the text you want to search and then pressing enter. For example, to search for "hello world" in the text, you type `/hello world` and press enter. To find the **n**ext occurrence you type `n`, for previous, you type `N`. This is more like the search feature in your common text editors and IDEs.
 - Replacing text a bit more complicated. You start by typing `:`, then the range of lines you would like to search. For example, `23, 53` or `%` to search whole file. Then you type `s`, followed by `/<text-to-search>`, `/<text-to-replace-with>` and then some options. Let me give you some examples:
   - `:%s/foo/bar/gc`- Searches the whole file for every occurrence (`g`) of `foo`, replaces it with `bar`. Asks for permission (`c`)
   - `:3,10 s/foo/bar`- Searches from line 3 to line 10 for next occurrence of `foo`, replaces it with `bar` without asking permission
@@ -165,6 +163,6 @@ If you don't want to install vim but want to try it out, many editors and IDEs h
 
 To look at all the key bindings and commands that you can use [vimhelp](https://vimhelp.org), it is an amazing reference.
 
-In the [next part](/blog/mastering-vim-part-2-vimrc-and-plugins) of this series I will show you how to make your vim look something like this.
+In the next part of this series I will show you how to make your vim look something like this.
 
 ![Modified Vim](/img/vim-modified.png "Modified Vim")
