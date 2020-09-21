@@ -93,7 +93,7 @@ Another way to avoid prop drilling is just by using components smartly.
 function App() {
   render() {
     return (
-      <Parent>;
+      <Parent>
         <Child foo="Apples" />
       </Parent>
     )
