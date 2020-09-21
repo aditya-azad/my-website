@@ -83,8 +83,6 @@ The components that need it can "subscribe" to the store and get what they need 
 
 It should be used cautiously as it adds a lot of code to your application and has it's own set of problems. Basically, you should use it when there is a lot of global state. Maybe you have authentication, some sort of dynamic theme selection and a lot of other things that are needed by a lot of components in the application.
 
-Read [this post](/blog/react-vs-react-redux-a-comparison) to find out more about it.
-
 Personally, I would avoid using Redux wherever I can and use Context API instead.
 
 ## Composition
