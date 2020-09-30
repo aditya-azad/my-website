@@ -15,7 +15,6 @@ You can find my resume <a href="https://docs.google.com/document/d/158tU_6gTBIBU
 
 ## Books I like
 
-- To Kill a Mockingbird - Harper Lee
 - On the Shortness of Life - Seneca
 - Meditations - Marcus Aurelius
 - Everything Is F\*cked - Mark Manson
@@ -25,8 +24,6 @@ You can find my resume <a href="https://docs.google.com/document/d/158tU_6gTBIBU
 
 - Interstellar
 - Inception
-- Matrix
-- Good Will Hunting
 - Breaking Bad
 - Mad Men
 - Fullmetal Alchemist: Brotherhood
